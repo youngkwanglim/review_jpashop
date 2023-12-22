@@ -1,4 +1,4 @@
-package review_jpabook.review_jpashop;
+package review_jpabook;
 
 import lombok.Getter;
 import lombok.Setter;
