@@ -1,4 +1,4 @@
-package review_jpabook;
+package review_jpabook.review_jpashop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
