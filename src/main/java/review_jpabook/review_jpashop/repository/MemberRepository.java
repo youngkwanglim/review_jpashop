@@ -1,7 +1,6 @@
-package review_jpabook.review_jpashop.Repository;
+package review_jpabook.review_jpashop.repository;
 
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 import review_jpabook.review_jpashop.domain.Member;

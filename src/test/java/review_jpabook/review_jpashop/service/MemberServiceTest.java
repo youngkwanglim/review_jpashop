@@ -1,6 +1,5 @@
-package review_jpabook.review_jpashop.Service;
+package review_jpabook.review_jpashop.service;
 
-import com.fasterxml.jackson.annotation.JacksonAnnotationsInside;
 import jakarta.persistence.EntityManager;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
-import review_jpabook.review_jpashop.Repository.MemberRepository;
+import review_jpabook.review_jpashop.repository.MemberRepository;
 import review_jpabook.review_jpashop.domain.Member;
 
 import static org.junit.Assert.*;

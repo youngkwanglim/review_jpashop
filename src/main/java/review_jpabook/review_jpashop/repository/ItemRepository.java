@@ -1,4 +1,4 @@
-package review_jpabook.review_jpashop.Repository;
+package review_jpabook.review_jpashop.repository;
 
 import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;

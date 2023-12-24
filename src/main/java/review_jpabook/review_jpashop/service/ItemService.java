@@ -1,9 +1,9 @@
-package review_jpabook.review_jpashop.Service;
+package review_jpabook.review_jpashop.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import review_jpabook.review_jpashop.Repository.ItemRepository;
+import review_jpabook.review_jpashop.repository.ItemRepository;
 import review_jpabook.review_jpashop.domain.item.Item;
 
 import java.util.List;
