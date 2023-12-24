@@ -30,7 +30,7 @@ public class Order {
     @JoinColumn(name = "delivry_id")
     private Delivery delivery;
 
-    private LocalDateTime dateTime;
+    private LocalDateTime orderdate;
 
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
