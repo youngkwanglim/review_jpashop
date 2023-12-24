@@ -1,7 +1,9 @@
 package review_jpabook.review_jpashop.domain;
 
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import review_jpabook.review_jpashop.domain.item.Item;
 
@@ -10,6 +12,7 @@ import static jakarta.persistence.FetchType.*;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class OrderItem {
 
     @Id
