@@ -3,6 +3,7 @@ package review_jpabook.review_jpashop;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
+import review_jpabook.review_jpashop.domain.Member;
 
 @Repository
 public class MemberRepository {
