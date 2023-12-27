@@ -3,10 +3,7 @@ package review_jpabook.review_jpashop.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import review_jpabook.review_jpashop.domain.Delivery;
-import review_jpabook.review_jpashop.domain.Member;
-import review_jpabook.review_jpashop.domain.Order;
-import review_jpabook.review_jpashop.domain.OrderItem;
+import review_jpabook.review_jpashop.domain.*;
 import review_jpabook.review_jpashop.domain.item.Item;
 import review_jpabook.review_jpashop.repository.ItemRepository;
 import review_jpabook.review_jpashop.repository.MemberRepository;
@@ -62,7 +59,7 @@ public class OrderService {
     }
 
     //검색
-//    public List<Order> findOrders(OrderSearch orderSearch) {
-//        return orderRepository.findAll(orderSearch);
-//    }
+    public List<Order> findOrders(OrderSearch orderSearch) {
+        return orderRepository.findAllByCriteria(orderSearch);
+    }
 }
