@@ -31,7 +31,7 @@ public class OrderController {
         model.addAttribute("members", members);
         model.addAttribute("items", items);
 
-        return "/order/orderForm";
+        return "order/orderForm";
     }
 
     @PostMapping("/order")
@@ -51,7 +51,7 @@ public class OrderController {
         return "order/orderList";
     }
 
-    @PostMapping(value = "orders/{orderId}/cancel")
+    @PostMapping("/orders/{orderId}/cancel")
     public String cancelOrder(@PathVariable("orderId") Long orderId) {
 
         orderService.cancelOrder(orderId);
