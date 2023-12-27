@@ -11,6 +11,8 @@ import review_jpabook.review_jpashop.domain.Address;
 import review_jpabook.review_jpashop.domain.Member;
 import review_jpabook.review_jpashop.service.MemberService;
 
+import java.util.List;
+
 @Controller
 @RequiredArgsConstructor
 public class MemberController {
@@ -38,5 +40,12 @@ public class MemberController {
 
         memberService.join(member);
         return "redirect:/";
+    }
+
+    @GetMapping("/members")
+    public String list(Model model) {
+        List<Member> members = memberService.findMembers();
+        model.addAttribute("members", members);
+        return "members/memberList";
     }
 }
