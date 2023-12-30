@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import review_jpabook.review_jpashop.domain.Member;
 import review_jpabook.review_jpashop.domain.Order;
-import review_jpabook.review_jpashop.domain.OrderSearch;
+import review_jpabook.review_jpashop.repository.OrderSearch;
 import review_jpabook.review_jpashop.domain.item.Item;
 import review_jpabook.review_jpashop.service.ItemService;
 import review_jpabook.review_jpashop.service.MemberService;

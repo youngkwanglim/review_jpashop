@@ -8,6 +8,7 @@ import review_jpabook.review_jpashop.domain.item.Item;
 import review_jpabook.review_jpashop.repository.ItemRepository;
 import review_jpabook.review_jpashop.repository.MemberRepository;
 import review_jpabook.review_jpashop.repository.OrderRepository;
+import review_jpabook.review_jpashop.repository.OrderSearch;
 
 import java.util.List;
 
