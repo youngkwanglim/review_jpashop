@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
-import review_jpabook.review_jpashop.repository.MemberRepository;
 import review_jpabook.review_jpashop.domain.Member;
+import review_jpabook.review_jpashop.repository.MemberRepository;
 
 import static org.junit.Assert.*;
 
@@ -34,7 +34,7 @@ public class MemberServiceTest {
         Long savedId = memberService.join(member);
 
         //then
-        assertEquals(member, memberRepository.findOne(savedId));
+        assertEquals(member, memberRepository.findById(savedId));
     }
 
     @Test(expected = IllegalStateException.class)

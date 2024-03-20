@@ -19,7 +19,6 @@ import static jakarta.persistence.FetchType.*;
 @Getter
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-
 public class Order {
 
     @Id

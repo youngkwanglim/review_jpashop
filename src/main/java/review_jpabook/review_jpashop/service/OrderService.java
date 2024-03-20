@@ -5,10 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import review_jpabook.review_jpashop.domain.*;
 import review_jpabook.review_jpashop.domain.item.Item;
-import review_jpabook.review_jpashop.repository.ItemRepository;
-import review_jpabook.review_jpashop.repository.MemberRepository;
-import review_jpabook.review_jpashop.repository.OrderRepository;
-import review_jpabook.review_jpashop.repository.OrderSearch;
+import review_jpabook.review_jpashop.repository.*;
 
 import java.util.List;
 
@@ -28,7 +25,7 @@ public class OrderService {
     public Long order(Long memberId, Long itemId, int count) {
 
         //엔티티 조회
-        Member member = memberRepository.findOne(memberId);
+        Member member = memberRepository.findById(memberId).get();
         Item item = itemRepository.findOne(itemId);
 
         //배송정보 생성
@@ -61,6 +58,6 @@ public class OrderService {
 
     //검색
     public List<Order> findOrders(OrderSearch orderSearch) {
-        return orderRepository.findAllByCriteria(orderSearch);
+        return orderRepository.findAll(orderSearch);
     }
 }
